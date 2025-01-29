@@ -9,7 +9,9 @@ namespace EditorHtml
         {
             Console.Clear();
             DrawScreen();
+            var option = short.Parse(Console.ReadLine());
             Console.ReadKey();
+            HandleMenuOption(option);
 
 
 
@@ -17,40 +19,37 @@ namespace EditorHtml
 
         public static void DrawScreen()
         {
-            string currentPath = Environment.CurrentDirectory;
-            int characterPath = currentPath.Length;
 
-            LineMaker(characterPath);
-            ColumnMaker(characterPath);
+
+            LineMaker();
+            ColumnMaker();
             WriteOptions();
 
 
 
         }
 
-        public static void LineMaker(int characterPath)
+        public static void LineMaker()
         {
-            int sizeCorrect = characterPath + 4;
+
 
             Console.Write("+");
-            for (int i = 0; i <= sizeCorrect; i++)
+            for (int i = 0; i <= 30; i++)
                 Console.Write("-");
             Console.Write("+");
 
             Console.Write("\n");
         }
 
-        public static void ColumnMaker(int characterPath)
+        public static void ColumnMaker()
         {
 
-
-            int sizeCorrect = characterPath + 4;
 
             for (int lines = 0; lines <= 15; lines++)
             {
 
                 Console.Write("|");
-                for (int i = 0; i <= sizeCorrect; i++)
+                for (int i = 0; i <= 30; i++)
                     Console.Write(" ");
 
 
@@ -60,7 +59,7 @@ namespace EditorHtml
             }
 
             Console.Write("+");
-            for (int i = 0; i <= sizeCorrect; i++)
+            for (int i = 0; i <= 30; i++)
                 Console.Write("-");
             Console.Write("+");
 
@@ -83,6 +82,18 @@ namespace EditorHtml
             Console.SetCursorPosition(3, 10);
             Console.Write("Opção: ");
             Console.SetCursorPosition(3, 11);
+        }
+
+        public static void HandleMenuOption(short option)
+        {
+            switch (option)
+            {
+                case 1: Console.WriteLine("Editor"); break;
+                case 2: Console.WriteLine("Editor"); break;
+                case 3: Console.Clear(); Environment.Exit(0); break;
+                default: Console.Clear(); Show(); break;
+            }
+
         }
     }
 }

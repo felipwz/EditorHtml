@@ -7,6 +7,7 @@ C:\Users\Luiz Felipe\Projetos\EditorHtml\obj\Debug\net9.0\EditorHtml.GeneratedMS
 C:\Users\Luiz Felipe\Projetos\EditorHtml\obj\Debug\net9.0\EditorHtml.AssemblyInfoInputs.cache
 C:\Users\Luiz Felipe\Projetos\EditorHtml\obj\Debug\net9.0\EditorHtml.AssemblyInfo.cs
 C:\Users\Luiz Felipe\Projetos\EditorHtml\obj\Debug\net9.0\EditorHtml.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Felipe\Projetos\EditorHtml\obj\Debug\net9.0\EditorHtml.sourcelink.json
 C:\Users\Luiz Felipe\Projetos\EditorHtml\obj\Debug\net9.0\EditorHtml.dll
 C:\Users\Luiz Felipe\Projetos\EditorHtml\obj\Debug\net9.0\refint\EditorHtml.dll
 C:\Users\Luiz Felipe\Projetos\EditorHtml\obj\Debug\net9.0\EditorHtml.pdb
